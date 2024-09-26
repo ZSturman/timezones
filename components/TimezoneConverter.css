@@ -1,0 +1,35 @@
+.ribbon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.timezone-ribbon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.ribbon-section {
+  flex: 0 0 100px; /* Fixed width per hour */
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f0f0f0;
+}
+
+.ribbon-section:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+.current-hour {
+  background-color: rgba(100, 149, 237, 0.5);
+}
+
+.ribbon-section + .ribbon-section {
+  border-left: 1px solid #ccc;
+}
